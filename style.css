@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&family=Space+Mono:wght@700&display=swap");
+:root {
+  --fondo-principal: linear-gradient(
+    to right,
+    #ce5937 0%,
+    #a115a4 50%,
+    #9c17c5 100%
+  );
+}
+* {
+  font-family: "Goldman", cursive;
+}
+.navbar {
+  background: var(--fondo-principal);
+}
+.nav-img {
+  height: 4rem;
+}
