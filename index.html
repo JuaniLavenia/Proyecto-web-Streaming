@@ -2,393 +2,535 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>RollingStriming</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>RollingStriming</title>
 </head>
 
 <body>
-    <div class="container-fluid bg-dark">
+  <div class="container-fluid bg-dark">
+    <!--Inicio de header-->
+    <header id="header">
 
-        <!--Inicio de header-->
-        <header id="header">
+      <!--Inicio de logo-->
+      <div class="logo">
 
-            <!--Inicio de logo-->
-            <div class="logo">
+      </div>
+
+
+      <h1></h1>
+      <!--Fin de logo-->
+
+      <!--Inicio del navbar-->
+      <nav id="navbar">
+
+      </nav>
+      <!--Fin del navbar-->
+
+      <!--Inicio de slider-->
+      <div class="slider row bg-dark mb-3">
+        <div class="col-12 mt-3">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!--Inicio de botones de slider-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <!--Fin de botones de slider-->
+
+
+            <div class="carousel-inner">
+
+              <!--Inicio Imagen Vennom y boton-->
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="Imagenes/Carrucel/Venom.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fs-2">VENOM</h3>
+                  <!-- Modal -->
+                  <div class="botoncarrusel">
+                    <!-- Button modal -->
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#vennomModal">
+                      Ver Trailer
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                      Ver Película
+                    </button>
+
+                    <!--Inicio de Modal -->
+                    <div class="modal fade" id="vennomModal" tabindex="-1" aria-labelledby="vennomModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <video src="Video/VENOM  Tráiler subtitulado HD_1080p.mp4.webm" controls autoplay width="450px"
+                            height="250px"></video>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Ver Película</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fin de Modal -->
+                  </div>
+
+                </div>
+              </div>
+              <!--Fin Imagen Vennom y boton-->
+
+              <!--Inicio Imagen Sonnic y boton-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="Imagenes/Carrucel/sonix.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fs-2">SONIC</h3>
+
+                  <!-- Modal -->
+                  <div class="botoncarrusel">
+                    <!-- Button modal -->
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#sonnicModal">
+                      Ver Trailer
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                      Ver Película
+                    </button>
+
+                    <!--Inicio de Modal -->
+                    <div class="modal fade" id="sonnicModal" tabindex="-1" aria-labelledby="sonnicModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <video src="Video/SONIC 2 LA PELICULA Tráiler Español Latino 2022_1080p.mp4" controls autoplay width="450px"
+                            height="250px"></video>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Ver Película</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fin de Modal -->
+                  </div>
+
+                </div>
+              </div>
+              <!--Fin imagen Sonnic y boton-->
+
+              <!--Inicio Imagen Aquaman y boton-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="Imagenes/Carrucel/aquaman.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fs-2">AQUAMAN</h3>
+
+                  <!-- Modal -->
+                  <div class="botoncarrusel">
+                    <!-- Button modal -->
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#aquamanModal">
+                      Ver Trailer
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                      Ver Película
+                    </button>
+
+                    <!--Inicio de Modal -->
+                    <div class="modal fade" id="aquamanModal" tabindex="-1" aria-labelledby="aquamanModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <video src="Video/Aquaman  Tráiler Oficial Sub Español_1080p.mp4" controls autoplay width="450px"
+                            height="250px"></video>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Ver Película</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fin de Modal -->
+                  </div>
+
+                </div>
+              </div>
+              <!--Fin Imagen Aquaman y boton-->
+
+              <!--Inicio Imagen Pantera negra y boton-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="Imagenes/Carrucel/blackpanter.com.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fs-2">PANTERA NEGRA</h3>
+                  <div class="botoncarrusel">
+
+                    <!-- Modal -->
+                    <div class="botoncarrusel">
+                      <!-- Button modal -->
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#panteranegraModal">
+                        Ver Trailer
+                      </button>
+                      <button type="button" class="btn btn-warning">
+                        Ver Película
+                      </button>
+
+                      <!--Inicio de Modal -->
+                      <div class="modal fade" id="panteranegraModal" tabindex="-1"
+                        aria-labelledby="panteranegraModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <video src="Video/Pantera Negra de Marvel Studios  Nuevo Tráiler_1080p.mp4" controls autoplay width="450px"
+                              height="250px"></video>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Ver Película</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Fin de Modal -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fin Imagen Pantera negra y boton-->
+
+              <!--Inicio Imagen Black Adam y boton-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="Imagenes/Carrucel/black_adam.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="fs-2">BLACK ADAM</h3>
+                  <!-- Modal -->
+                  <div class="botoncarrusel">
+                    <!-- Button modal -->
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#blackadamModal">
+                      Ver Trailer
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                      Ver Película
+                    </button>
+
+                    <!--Inicio de Modal -->
+                    <div class="modal fade" id="blackadamModal" tabindex="-1" aria-labelledby="blackadamModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <video src="Video/Black Adam  Tráiler oficial 2_1080p.mp4" controls autoplay width="450px"
+                            height="250px"></video>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Ver Película</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fin de Modal -->
+                  </div>
+                </div>
+              </div>
+              <!--Fin Imagen Black Adam y boton-->
 
             </div>
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
 
-            <h1></h1>
-            <!--Fin de logo-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
 
-            <!--Inicio del navbar-->
-            <nav id="navbar">
+          </div>
 
-            </nav>
-            <!--Fin del navbar-->
+        </div>
 
-            <!--Inicio de carrucel-->
-            <div class="slider row bg-dark mb-3">
-                <div class="col-12 mt-3">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes/Carrucel/Venom.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3>Venom</h3>
-                                    <p>Cuando Brock adquiera los poderes del simbionte que le usa como huésped, Venom
-                                        tomará
-                                        posesión de su cuerpo, convirtiéndole en un despiadado y peligroso súpervillano.
-                                    </p>
-                                    <div class="d-grid col-2 mx-auto mt-1">
-                                        <a href="#" class="btn btn-danger btn-sm">Ver pelicula</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Carrucel/sonix.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3>Sonic</h3>
-                                    <p>Sonic se muere por demostrar que tiene madera de auténtico héroe.</p>
-                                    <div class="d-flex col-4">
-                                        <a href="#" class="btn btn-danger btn-sm" >Ver pelicula</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Carrucel/aquaman.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3>Aquaman</h3>
-                                    <p>Este reacio gobernante de Atlantis se encuentra atrapado entre los constantes
-                                        estragos causados al mar por los habitantes de la superficie y los atlantes
-                                        buscando
-                                        rebelarse.</p>
-                                    <div class="d-grid col-2 mx-auto mt-1">
-                                        <a href="#" class="btn btn-danger btn-sm">Ver pelicula</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Carrucel/blackpanter.com.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3>Pantera Negra</h3>
-                                    <p>"Black Panther" vuelve a casa, a la nación de Wakanda, aislada y muy avanzada
-                                        tecnológicamente, para ser proclamado Rey.</p>
-                                    <div class="d-grid col-2 mx-auto mt-1">
-                                        <a href="#" class="btn btn-danger btn-sm">Ver pelicula</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes/Carrucel/black_adam.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h3>Black Adam</h3>
-                                    <p>Black Adam esta listo para desencadenar su forma única de justicia en el mundo
-                                        moderno.</p>
-                                    <div class="d-grid col-2 mx-auto mt-1">
-                                        <a href="#" class="btn btn-danger btn-sm">Ver pelicula</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
+      </div>
+      <!--Fin de carrucel-->
+    </header>
+    <!--Fin de header-->
+
+    <!-- Inicio se seccion principal-->
+    <section id="section">
+      <!-- Inicio Slider de series recomendadas-->
+      <article class="seccion_series">
+        <h2 class="fs-1">Series Sugeridas</h2>
+        <div class="row">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="pelis mb-3">
+                  <div class="col col-12 col-sm-6 col-md-4 col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/lastkingdom-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
                     </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/startrek-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/stranggerthings-carte-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/Lucifer-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="pelis mb-3">
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/thewalkingdead-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/thewitcher-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/lacasadepapel-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/los100-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="pelis mb-3">
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/supergitl-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/elite-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/you-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/thecrown-cartel-serie.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!--Fin de carrucel-->
-        </header>
-        <!--Fin de header-->
-
-        <!-- Inicio se seccion principal-->
-        <section id="section">
-            <!-- Inicio Slider de series recomendadas-->
-            <article class="seccion_series">
-                <h2 class="fs-1">Series Sugeridas</h2>
-                <div class="row">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="pelis mb-3">
-                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/lastkingdom-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/startrek-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/stranggerthings-carte-serie.jpg"
-                                            class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/Lucifer-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pelis mb-3">
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/thewalkingdead-cartel-serie.jpg"
-                                            class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/thewitcher-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/lacasadepapel-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/los100-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pelis mb-3">
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/supergitl-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/elite-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/you-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/thecrown-cartel-serie.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Fin Slider de series recomendadas-->
+      <!-- Inicio Slider de Películas recomendadas-->
+      <article class="seccion_Películas">
+        <h2>Películas Sugeridas</h2>
+        <div class="row">
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="pelis mb-3">
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/Bloodshot-Carteleras.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
                     </div>
-                </div>
-            </article>
-            <!-- Fin Slider de series recomendadas-->
-            <!-- Inicio Slider de peliculas recomendadas-->
-            <article class="seccion_peliculas">
-                <h2>Peliculas Sugeridas</h2>
-                <div class="row">
-                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="pelis mb-3">
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/Bloodshot-Carteleras.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/elhombreinvisible.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/BlackAdam-Cartel.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/manhatan.jpg" class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pelis mb-3">
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/lacancion-cartel.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/skin-cartel.jpg" class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/mr-jones-cartel.jpg" class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/cuestiondejusticia-cartel.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary btn-sm">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="series">
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/queen-cartel.jpg" class="card-img-top" alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/frida-cartel.jpg" class="card-img-top" alt="...">
-                                        <div class="d-grid col-10mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/firstlove-cartel.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
-                                        <img src="Imagenes/Carrucel/lacancion-cartel.jpg" class="card-img-top"
-                                            alt="...">
-                                        <div class="d-grid col-10 mx-auto mt-1">
-                                            <a href="#" class="btn btn-primary">Ver Pelicula</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/elhombreinvisible.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
                     </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/BlackAdam-Cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/manhatan.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
                 </div>
-            </article>
-            <!-- Fin Slider de peliculas recomendadas-->
-
-            <!-- Inicio de Slider categorias-->
-            <article class="seccion_generos">
-                <h2>Generos Sugeridos</h2>
-                <div class="slidercategorias row text-white m-4">
-                    <div class="m-2"><a href="#">Accion</a></div>
-                    <div class="m-2"><a href="#">Comedia</a></div>
-                    <div class="m-2"><a href="#">Ficcion</a></div>
-                    <div class="m-2"><a href="#">Terror</a></div>
-                    <div class="m-2"><a href="#">Romance</a></div>
+              </div>
+              <div class="carousel-item">
+                <div class="pelis mb-3">
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/lacancion-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/skin-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/mr-jones-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/cuestiondejusticia-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary btn-sm">Ver Película</a>
+                    </div>
+                  </div>
                 </div>
-            </article>
-            <!-- Fin de Slider categorias-->
+              </div>
 
-        </section>
-        <!-- Fin de seccion principal-->
+              <div class="carousel-item">
+                <div class="series">
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/queen-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/frida-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10mx-auto mt-1">
+                      <a href="#" class="btn btn-primary">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/firstlove-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary">Ver Película</a>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-sm-6 col-md-4  col-lg-3 p-2 text-center">
+                    <img src="Imagenes/Carrucel/lacancion-cartel.jpg" class="card-img-top" alt="...">
+                    <div class="d-grid col-10 mx-auto mt-1">
+                      <a href="#" class="btn btn-primary">Ver Película</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- Fin Slider de Películas recomendadas-->
+
+      <!-- Inicio de Slider categorias-->
+      <article class="seccion_generos">
+        <h2>Generos Sugeridos</h2>
+        <div class="slidercategorias row text-white m-4">
+          <div class="m-2"><a href="#">Accion</a></div>
+          <div class="m-2"><a href="#">Comedia</a></div>
+          <div class="m-2"><a href="#">Ficcion</a></div>
+          <div class="m-2"><a href="#">Terror</a></div>
+          <div class="m-2"><a href="#">Romance</a></div>
+        </div>
+      </article>
+      <!-- Fin de Slider categorias-->
+
+    </section>
+    <!-- Fin de seccion principal-->
 
 
-        <!--Inicio de pie de pagina-->
-        <footer id="footer">
-            <div></div>
-            <div></div>
-            <div></div>
-        </footer>
-        <!--Fin de pie de pagina-->
+    <!--Inicio de pie de pagina-->
+    <footer id="footer">
+      <div></div>
+      <div></div>
+      <div></div>
+    </footer>
+    <!--Fin de pie de pagina-->
 
-    </div>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

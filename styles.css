@@ -24,6 +24,12 @@ p {
     color: white;
 }
 
+
+.carousel-caption .botoncarrusel a{
+    font-size:1.2rem;
+}
+
+
 /*-----------Contenedor principal------------*/
 
 h2 {
