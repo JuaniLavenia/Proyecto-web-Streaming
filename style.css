@@ -1,0 +1,28 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+*{
+    background-color: black;
+}
+.main{
+    background-color: black;
+}
+.row{
+    margin-bottom: 2rem;
+}
+h1{
+    color: antiquewhite;
+}
+.link{
+    text-decoration: none;
+}
+h5{
+    color: antiquewhite;
+}
+span{
+    background-color: aliceblue;
+
+}
