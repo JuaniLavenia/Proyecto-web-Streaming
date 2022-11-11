@@ -1,13 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --fondo-principal: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 28, 107, 1) 60%,
+    rgba(0, 58, 125, 1) 100%
+  );
+}
+
 * {
+  font-family: "Goldman", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar {
+  background: var(--fondo-principal);
+}
+
+.nav-img {
+  height: 4rem;
 }
 
 .pie-pagina {
   width: 100%;
   background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .pie-pagina .grupo-1 {
@@ -69,6 +89,7 @@
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -76,4 +97,3 @@
     grid-gap: 30px;
     padding: 35px 0px;
   }
-}
