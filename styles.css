@@ -95,6 +95,7 @@ h2 {
 .seccion_promociones .card_promo{
   background: darkslateblue;
   text-align: center;
+  box-shadow: -2px -2px 2px rgb(169, 167, 167);   
 }
 
 .seccion_promociones .card_promo h4,h5,p{
