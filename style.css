@@ -10,7 +10,12 @@
 
 * {
   font-family: "Goldman", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62, 5%;
 }
+
 .navbar {
   background: var(--fondo-principal);
 }
@@ -23,9 +28,11 @@ body {
   padding: 0;
   height: 100vh;
 }
+
 .imgerror {
   width: 50%;
 }
+
 .contenedor {
   background-color: black;
   height: 100vh;
@@ -35,11 +42,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 h1 {
   color: rgb(233, 238, 245);
   font-size: 20px;
   padding: 20px;
 }
+
 button {
   padding: 13px 30px;
   border-radius: 15px;
@@ -104,14 +113,40 @@ button {
 .pie-pagina .grupo-1 .red-social a:hover {
   color: blue;
 }
+
 .pie-pagina .grupo-2 {
   background-color: black;
   padding: 15px 10px;
   text-align: center;
   color: white;
 }
+
 .pie-pagina .grupo-2 small {
   font-size: 15px;
+}
+
+.main {
+  background-color: black;
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h5 {
+  color: antiquewhite;
+}
+
+span {
+  background-color: aliceblue;
 }
 
 @media screen and (max-width: 630px) {
