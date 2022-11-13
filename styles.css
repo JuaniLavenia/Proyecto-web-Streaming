@@ -93,17 +93,17 @@ h2 {
 
 /*-----------Card promociones------------*/
 .seccion_promociones .card_promo{
-  background: darkslateblue;
+  background: #6699FF;
   text-align: center;
   box-shadow: -2px -2px 2px rgb(169, 167, 167);   
 }
 
 .seccion_promociones .card_promo h4,h5,p{
-  color: white;
+  color: #444;
   font-style: normal;
 }
 
 .seccion_promociones .card_promo p{
-  color: rgb(235, 55, 248);
+  color: #444;
   font-family: Arial, Helvetica, sans-serif;
 }
