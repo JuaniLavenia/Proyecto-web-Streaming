@@ -31,65 +31,37 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
+.pie-pagina .contacto ul li{
+  margin: 1rem;
 }
 
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-  width: 250px;
-}
-
-.pie-pagina .grupo-1 .box a {
-  color: white;
-  margin-bottom: 25px;
-  font-size: 20px;
+.pie-pagina .contacto ul li a{
   text-decoration: none;
-}
-
-.pie-pagina .grupo-1 .box p {
   color: white;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: white;
-  margin-right: 10px;
-  background-color: black;
-  text-align: center;
-  transition: all 800ms ease;
-}
-
-.pie-pagina .grupo-1 .red-social a:hover {
+.pie-pagina .contacto ul li a:hover{
   color: blue;
 }
+
+
+.pie-pagina .siguenos a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.pie-pagina .siguenos a:hover{
+  color: blue;
+}
+
 .pie-pagina .grupo-2 {
-  background-color: black;
-  padding: 15px 10px;
   text-align: center;
+  padding: 1rem 0.6rem;
   color: white;
 }
-.pie-pagina .grupo-2 small {
-  font-size: 15px;
-}
+
 
 .main {
   background-color: black;
