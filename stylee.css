@@ -8,6 +8,7 @@
   );
 }
 
+/* GENERAL */
 * {
   font-family: "Goldman", cursive;
   margin: 0;
@@ -16,6 +17,13 @@
   font-size: 62, 5%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* NAVBAR */
 .navbar {
   background: var(--fondo-principal);
 }
@@ -23,12 +31,7 @@
   height: 4rem;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
+/* PAGINA ERROR */
 .imgerror {
   width: 50%;
 }
@@ -57,6 +60,7 @@ button {
   color: white;
 }
 
+/* FOOTER */
 .pie-pagina {
   width: 100%;
   background-color: black;
@@ -93,6 +97,7 @@ button {
   color: white;
 }
 
+/* PAGINAS CATEGORIAS */
 .main {
   background-color: black;
 }
@@ -117,6 +122,7 @@ span {
   background-color: aliceblue;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 630px) {
   .tituloerror {
     font-size: 16px;
