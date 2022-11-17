@@ -1,308 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROLLING STREAM - TERROR</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROLLING STREAM</title>
 
-  <body class="main">
-    <!-- INICIO DEL NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <img class="nav-img" src="imagenes/Logo RollingStream.jpg" alt="" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-info"
-                  aria-current="page"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Peliculas</a>
-              </li>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Series</a>
-              </li>
+<body class="main bg-dark">
+  <!-- INICIO DEL NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <img class="nav-img" src="imagenes/Logo RollingStream.jpg" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Peliculas</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Categorias</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <a href="indexlogin.html" class="btn btn-outline-info">Login</a>
-              <a href="suscripcion.html" class="col btn btn-outline-warning"
-                >Suscribete</a
-              >
-            </form>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Series</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-info" href="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="aventura1.html">Ciencia Ficcion</a></li>
+                <li><a class="dropdown-item" href="aventura2.html">Aventura</a></li>
+                <li><a class="dropdown-item" href="aventura3.html">Comedia</a></li>
+                <li><a class="dropdown-item" href="aventura4.html">Terror</a></li>
+                <li><a class="dropdown-item" href="aventura5.html">Romance</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <a href="indexlogin.html" class="btn btn-outline-info">Login</a>
+            <a href="suscripcion.html" class="col btn btn-outline-warning">Suscribete</a>
+          </form>
         </div>
-      </nav>
-    </header>
-    <!-- FIN DEL NAVBAR -->
+      </div>
+    </nav>
+  </header>
+  <!-- FIN DEL NAVBAR -->
 
-    <!-- INICIO PELICULAS -->
-    <div class="container text-center">
-      <h1 class="text-decoration-underline">Terror</h1>
+  <!-- INICIO PELICULAS -->
+  <div class="container-fluid text-center">
+    <h1 class="text-decoration-underline mb-4">Terror</h1>
+    <div class="row seccion">
 
       <!-- INICIO SECCION 1 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-la-orden-del-fenix-4145-poster-200x300.jpg"
-              alt=""
-            />
-            <h5>
-              Harry Potter y la <br />
-              orden del fenix
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2018/01/harry-potter-y-el-misterio-del-principe-4149-poster-211x300.jpg"
-            />
-            <h5>
-              Harry Potter y el <br />
-              misterio del principe
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-1-4153-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte1
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-2-4157-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte2
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/the-accursed-64412-poster-202x300.jpg" alt="" />
+          <h5>
+            The Accursed
+          </h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/margaux-64750-poster-200x300.jpg" />
+          <h5>
+            Margaux
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/10/the-inhabitant-63567-poster-200x300.jpg" />
+          <h5>
+            The Inhabitant
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/project-legion-64716-poster-200x300.jpg" />
+          <h5>
+            Project Legion
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 1 -->
 
       <!-- INICIO SECCION 2 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/rey-arturo-la-leyenda-de-excalibur-3091-poster-200x300.jpg"
-            />
-            <h5>
-              Rey Arturo: La leyenda <br />
-              de la espada
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/assassins-creed-1270-poster-200x300.jpg"
-            />
-            <h5>Assassin’s Creed</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/alicia-a-traves-del-espejo-1017-poster-200x300.jpg"
-            />
-            <h5>Alicia a través del espejo</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/el-libro-de-la-selva-901-poster-203x300.jpg"
-            />
-            <h5>El libo de la selva</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/08/nop-61748-poster-200x300.jpg" />
+          <h5>
+            Nop
+          </h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/06/watcher-59139-poster-200x300.jpg" />
+          <h5>Watcher</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/conjuring-the-beyond-64537-poster-200x300.jpg" />
+          <h5>Conjuring</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/clown-motel-2-64533-poster-200x300.jpg" />
+          <h5>Clown Motel 2</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 2 -->
 
       <!-- INICIO SECCION 3 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-la-orden-del-fenix-4145-poster-200x300.jpg"
-              alt=""
-            />
-            <h5>
-              Harry Potter y la <br />
-              orden del fenix
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2018/01/harry-potter-y-el-misterio-del-principe-4149-poster-211x300.jpg"
-            />
-            <h5>
-              Harry Potter y el <br />
-              misterio del principe
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-1-4153-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte1
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-2-4157-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte2
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/arruiname-ruin-me-64493-poster-200x300.jpg" alt="" />
+          <h5>
+            Arruíname
+          </h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/10/matriarcado-63794-poster-200x300.jpg" />
+          <h5>
+            Matriarcado
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/10/halloween-la-noche-final-63486-poster-203x300.jpg" />
+          <h5>
+            Halloween: La Noche Final
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/the-red-book-ritual-64285-poster-200x300.jpg" />
+          <h5>
+            The Red Book Ritual
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 3 -->
 
       <!-- INICIO SECCION 4 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-la-orden-del-fenix-4145-poster-200x300.jpg"
-              alt=""
-            />
-            <h5>
-              Harry Potter y la <br />
-              orden del fenix
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2018/01/harry-potter-y-el-misterio-del-principe-4149-poster-211x300.jpg"
-            />
-            <h5>
-              Harry Potter y el <br />
-              misterio del principe
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-1-4153-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte1
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/06/harry-potter-y-las-reliquias-de-la-muerte-parte-2-4157-poster-200x300.jpg"
-            />
-            <h5>
-              Harry Potter y las <br />
-              reliquias de la <br />
-              muerte parte2
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/requiem-for-a-scream-64281-poster-200x300.jpg"
+            alt="" />
+          <h5>
+            Requiem for a Scream
+          </h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/the-last-thing-mary-saw-64190-poster-200x300.jpg" />
+          <h5>
+            The Last Thing Mary Saw
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/they-crawl-beneath-64168-poster-200x300.jpg" />
+          <h5>
+            The Crawl Beneath
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://cuevana3.ai/wp-content/uploads/2022/11/the-red-book-ritual-64285-poster-200x300.jpg" />
+          <h5>
+            Reza por el diablo
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 4 -->
+
 
       <!-- INICIO PAGINACION -->
       <nav aria-label="Page navigation example">
@@ -326,6 +257,58 @@
       </nav>
       <!-- FIN PAGINACION -->
     </div>
-    <!-- FIN PELICULAS -->
-  </body>
+  </div>
+  <!-- FIN PELICULAS -->
+
+  <!--INICIO DEL FOOTER-->
+  <footer class="pie-pagina">
+    <div class="row m-auto logo">
+      <!-- INICIO LOGO ROLLING -->
+      <div class="col col-12 col-sm-6 col-md-4 text-center mt-4">
+        <figure>
+          <a href="index.html">
+            <img src="img/Logo RollingStream.jpg" alt="Logo" style="width: 250px" />
+          </a>
+        </figure>
+      </div>
+      <!-- FIN LOGO ROLLING -->
+
+      <!-- INICIO ACERCA Y CONTACTANOS -->
+      <div class="col col-12 col-sm-6 col-md-4 text-center mt-4 contacto">
+        <ul>
+          <li><a href="acerca.html"> Acerca de RollingStream</a></li>
+          <li><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+      </div>
+      <!-- FIN ACERCA Y CONTACTANOS -->
+
+      <!-- INICIO SIGUENOS -->
+      <div class="col col-12 col-sm-12 col-md-4 text-center mt-4 siguenos">
+        <h2>Siguenos</h2>
+        <div class="red-social">
+          <a href="index404.html" class="fa fa-facebook fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-instagram fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-twitter fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-youtube fs-2 m-2"></a>
+        </div>
+      </div>
+      <!-- FIN SIGUENOS -->
+    </div>
+
+    <!-- INICIO PIE DE PAGINA -->
+    <div class="grupo-2">
+      <small>&copy;2022 <b>RollingStream</b> | Todos los derechos
+        reservados</small>
+    </div>
+    <!-- FIN PIE DE PAGINA -->
+  </footer>
+  <!-- FIN DEL FOOTER -->
+
+  <!-- INICIO SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- FIN SCRIPTS -->
+</body>
+
 </html>

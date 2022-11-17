@@ -1,283 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROLLING STREAM - CIENCIA FICCION</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROLLING STREAM</title>
 
-  <body class="main">
-    <!-- INICIO DEL NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <img class="nav-img" src="imagenes/Logo RollingStream.jpg" alt="" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-info"
-                  aria-current="page"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Peliculas</a>
-              </li>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Series</a>
-              </li>
+<body class="main bg-dark">
+  <!-- INICIO DEL NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <img class="nav-img" src="imagenes/Logo RollingStream.jpg" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-info" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Peliculas</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-info" href="#">Categorias</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <a href="indexlogin.html" class="btn btn-outline-info">Login</a>
-              <a href="suscripcion.html" class="col btn btn-outline-warning"
-                >Suscribete</a
-              >
-            </form>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Series</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-info" href="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="aventura1.html">Ciencia Ficcion</a></li>
+                <li><a class="dropdown-item" href="aventura2.html">Aventura</a></li>
+                <li><a class="dropdown-item" href="aventura3.html">Comedia</a></li>
+                <li><a class="dropdown-item" href="aventura4.html">Terror</a></li>
+                <li><a class="dropdown-item" href="aventura5.html">Romance</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <a href="indexlogin.html" class="btn btn-outline-info">Login</a>
+            <a href="suscripcion.html" class="col btn btn-outline-warning">Suscribete</a>
+          </form>
         </div>
-      </nav>
-    </header>
-    <!-- FIN DEL NAVBAR -->
+      </div>
+    </nav>
+  </header>
+  <!-- FIN DEL NAVBAR -->
 
-    <!-- INICIO PELICULAS -->
-    <div class="container text-center">
-      <h1 class="text-decoration-underline mb-4">Ciencia Ficcion</h1>
+  <!-- INICIO PELICULAS -->
+  <div class="container-fluid text-center">
+    <h1 class="text-decoration-underline mb-4">Ciencia Ficcion</h1>
+    <div class="row seccion">
 
       <!-- INICIO SECCION 1 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-iv-una-nueva-esperanza-1143-poster-211x300.jpg"
-              alt=""
-            />
-            <h5>
-              Star Wars: Episodio IV <br />
-              Una nueva esperanza
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-iii-la-venganza-de-los-sith-1140-poster-209x300.jpg"
-            />
-            <h5>
-              Star Wars: Episodio III <br />
-              La venganza de los Sith
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-ii-el-ataque-de-los-clones-1137-poster-212x300.jpg"
-            />
-            <h5>
-              Star Wars: Episodio II <br />
-              El ataque de los clones
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-i-la-amenaza-fantasma-1134-poster-210x300.jpg"
-            />
-            <h5>
-              Star Wars: Episodio I <br />
-              La amenaza fantasma
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/everest-545-poster-212x300.jpg"
+            alt="" />
+          <h5>
+            Star Wars: Episodio IV <br />
+            Una nueva esperanza
+          </h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-iii-la-venganza-de-los-sith-1140-poster-209x300.jpg" />
+          <h5>
+            Star Wars: Episodio III <br />
+            La venganza de los Sith
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-ii-el-ataque-de-los-clones-1137-poster-212x300.jpg" />
+          <h5>
+            Star Wars: Episodio II <br />
+            El ataque de los clones
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/la-guerra-de-las-galaxias-episodio-i-la-amenaza-fantasma-1134-poster-210x300.jpg" />
+          <h5>
+            Star Wars: Episodio I <br />
+            La amenaza fantasma
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 1 -->
 
       <!-- INICIO SECCION 2 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/warcraft-el-origen-1029-poster-200x300.jpg"
-            />
-            <h5>Warcraft: El origen</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-apocalipsis-1003-poster-200x300.jpg"
-            />
-            <h5>X-Men: Apocalipsis</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-primera-generacion-994-poster-200x300.jpg"
-            />
-            <h5>
-              X-Men: Primera <br />
-              generación
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-2-983-poster-200x300.jpg"
-            />
-            <h5>X-Men 2</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/warcraft-el-origen-1029-poster-200x300.jpg" />
+          <h5>Warcraft: El origen</h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-apocalipsis-1003-poster-200x300.jpg" />
+          <h5>X-Men: Apocalipsis</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-primera-generacion-994-poster-200x300.jpg" />
+          <h5>
+            X-Men: Primera <br />
+            generación
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-2-983-poster-200x300.jpg" />
+          <h5>X-Men 2</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 2 -->
 
       <!-- INICIO SECCION 3 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-980-poster-200x300.jpg"
-              alt=""
-            />
-            <h5>X-Men</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/el-renacido-758-poster-200x300.jpg"
-            />
-            <h5>El Renacido</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/el-ultimo-cazador-de-brujas-783-poster-210x300.jpg"
-            />
-            <h5>
-              El ultimo cazador de <br />
-              brujas
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/dragon-ball-z-la-resurreccion-de-freezer-233-poster-206x300.jpg"
-            />
-            <h5>
-              Dragon Ball Z: <br />
-              La resurrección de <br />
-              Freezer
-            </h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2020/05/x-men-980-poster-200x300.jpg" alt="" />
+          <h5>X-Men</h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/el-renacido-758-poster-200x300.jpg" />
+          <h5>El Renacido</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/el-ultimo-cazador-de-brujas-783-poster-210x300.jpg" />
+          <h5>
+            El ultimo cazador de <br />
+            brujas
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img
+            src="https://f3.cuevana3.me/wp-content/uploads/2017/08/dragon-ball-z-la-resurreccion-de-freezer-233-poster-206x300.jpg" />
+          <h5>
+            Dragon Ball Z: <br />
+            La resurrección de <br />
+            Freezer
+          </h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 3 -->
 
       <!-- INICIO SECCION 4 -->
-      <div class="row">
-        <!-- PELICULA 1 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/en-el-corazon-del-mar-795-poster-203x300.jpg"
-            />
-            <h5>En el corazon del mar</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 1 -->
-        <!-- PELICULA 2 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/terminator-genesis-224-poster-200x300.jpg"
-            />
-            <h5>Terminator genesis</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 2 -->
-        <!-- PELICULA 3 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/marte-the-martian-687-poster-200x300.jpg"
-            />
-            <h5>Marte</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 3 -->
-        <!-- PELICULA 4 -->
-        <div class="col-sm-6 col-md-3">
-          <a href="" class="link">
-            <img
-              src="https://f3.cuevana3.me/wp-content/uploads/2017/08/everest-545-poster-212x300.jpg"
-            />
-            <h5>Everest</h5>
-          </a>
-        </div>
-        <!-- FIN PELICULA 4 -->
+      <!-- PELICULA 1 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/en-el-corazon-del-mar-795-poster-203x300.jpg" />
+          <h5>En el corazon del mar</h5>
+        </a>
       </div>
+      <!-- FIN PELICULA 1 -->
+      <!-- PELICULA 2 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/terminator-genesis-224-poster-200x300.jpg" />
+          <h5>Terminator genesis</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 2 -->
+      <!-- PELICULA 3 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/marte-the-martian-687-poster-200x300.jpg" />
+          <h5>Marte</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 3 -->
+      <!-- PELICULA 4 -->
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="" class="link">
+          <img src="https://f3.cuevana3.me/wp-content/uploads/2017/08/everest-545-poster-212x300.jpg" />
+          <h5>Everest</h5>
+        </a>
+      </div>
+      <!-- FIN PELICULA 4 -->
       <!-- FIN SECCION 4 -->
 
       <!-- INICIO PAGINACION -->
@@ -302,6 +260,58 @@
       </nav>
       <!-- FIN PAGINACION -->
     </div>
-    <!-- FIN PELICULAS -->
-  </body>
+  </div>
+  <!-- FIN PELICULAS -->
+
+  <!--INICIO DEL FOOTER-->
+  <footer class="pie-pagina">
+    <div class="row m-auto logo">
+      <!-- INICIO LOGO ROLLING -->
+      <div class="col col-12 col-sm-6 col-md-4 text-center mt-4">
+        <figure>
+          <a href="index.html">
+            <img src="img/Logo RollingStream.jpg" alt="Logo" style="width: 250px" />
+          </a>
+        </figure>
+      </div>
+      <!-- FIN LOGO ROLLING -->
+
+      <!-- INICIO ACERCA Y CONTACTANOS -->
+      <div class="col col-12 col-sm-6 col-md-4 text-center mt-4 contacto">
+        <ul>
+          <li><a href="acerca.html"> Acerca de RollingStream</a></li>
+          <li><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+      </div>
+      <!-- FIN ACERCA Y CONTACTANOS -->
+
+      <!-- INICIO SIGUENOS -->
+      <div class="col col-12 col-sm-12 col-md-4 text-center mt-4 siguenos">
+        <h2>Siguenos</h2>
+        <div class="red-social">
+          <a href="index404.html" class="fa fa-facebook fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-instagram fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-twitter fs-2 m-2"></a>
+          <a href="index404.html" class="fa fa-youtube fs-2 m-2"></a>
+        </div>
+      </div>
+      <!-- FIN SIGUENOS -->
+    </div>
+
+    <!-- INICIO PIE DE PAGINA -->
+    <div class="grupo-2">
+      <small>&copy;2022 <b>RollingStream</b> | Todos los derechos
+        reservados</small>
+    </div>
+    <!-- FIN PIE DE PAGINA -->
+  </footer>
+  <!-- FIN DEL FOOTER -->
+
+  <!-- INICIO SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- FIN SCRIPTS -->
+</body>
+
 </html>
