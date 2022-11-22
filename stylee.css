@@ -31,15 +31,6 @@ body {
   height: 4rem;
 }
 
-/* PAGINAS ACERCA Y CONTACTA */
-.acerca {
-  padding: 1rem;
-}
-.contacta {
-  text-align: center;
-  padding: 2rem;
-}
-
 /* PAGINA ERROR */
 .imgerror {
   width: 50%;

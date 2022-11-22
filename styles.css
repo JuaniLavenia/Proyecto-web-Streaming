@@ -56,7 +56,7 @@ h2 {
   width: 80%;
 }
 
-.botoncarrusel a{
+.botoncarrusel a {
   text-decoration: none;
   color: black;
 }
@@ -110,18 +110,20 @@ h2 {
 }
 
 /*-----------Card promociones------------*/
-.seccion_promociones .card_promo{
-  background: #6699FF;
+.seccion_promociones .card_promo {
+  background: #6699ff;
   text-align: center;
-  box-shadow: -2px -2px 2px rgb(169, 167, 167);   
+  box-shadow: -2px -2px 2px rgb(169, 167, 167);
 }
 
-.seccion_promociones .card_promo h4,h5,p{
+.seccion_promociones .card_promo h4,
+h5,
+p {
   color: #444;
   font-style: normal;
 }
 
-.seccion_promociones .card_promo p{
+.seccion_promociones .card_promo p {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
 }

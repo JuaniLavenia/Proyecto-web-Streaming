@@ -8,7 +8,6 @@
   );
 }
 
-/* GENERAL */
 * {
   font-family: "Goldman", cursive;
   margin: 0;
@@ -17,13 +16,6 @@
   font-size: 62, 5%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
-/* NAVBAR */
 .navbar {
   background: var(--fondo-principal);
 }
@@ -31,16 +23,12 @@ body {
   height: 4rem;
 }
 
-/* PAGINAS ACERCA Y CONTACTA */
-.acerca {
-  padding: 1rem;
-}
-.contacta {
-  text-align: center;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-/* PAGINA ERROR */
 .imgerror {
   width: 50%;
 }
@@ -53,6 +41,38 @@ body {
   gap: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.main {
+  background-color: black;
+  background-image: url(https://img.pikbest.com/png-images/20211009/people-watching-movie-outdoors-in-evening_6139154.png!bw700);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin-bottom: 20%;
+}
+
+.login {
+  background-color: black;
+  opacity: 90%;
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+h2 {
+  color: white;
+}
+
+label {
+  color: antiquewhite;
+}
+p {
+  color: antiquewhite;
 }
 
 h1 {
@@ -69,7 +89,6 @@ button {
   color: white;
 }
 
-/* FOOTER */
 .pie-pagina {
   width: 100%;
   background-color: black;
@@ -106,17 +125,12 @@ button {
   color: white;
 }
 
-/* PAGINAS CATEGORIAS */
 .main {
   background-color: black;
 }
 
 .row {
   margin-bottom: 2rem;
-}
-
-h1 {
-  color: antiquewhite;
 }
 
 .link {
@@ -131,7 +145,6 @@ span {
   background-color: aliceblue;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 630px) {
   .tituloerror {
     font-size: 16px;
@@ -146,5 +159,12 @@ span {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    background-image: none;
+    background-color: black;
   }
 }
